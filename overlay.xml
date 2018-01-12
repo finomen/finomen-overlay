@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" status="unofficial">
+    <name>finomen-overlay</name>
+    <description>Finomen repository (private and test packages)</description>
+    <homepage>https://github.com/finomen/finomen-overlay</homepage>
+    <owner>
+        <email>finomen812@gmail.com</email>
+        <name>Filchenko, Nikolay</name>
+    </owner>
+    <source type="git">git://github.com/finomen/finomen-overlay.git</source>
+    <feed>https://github.com/finomen/finomen-overlay/commits/master.atom</feed>
+</repo>
+</repositories>
