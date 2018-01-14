@@ -29,9 +29,20 @@ src_prepare() {
 }
 
 src_configure() {
+  case `uname -m` in
+	"x86")
+		LIBDIR="lib"
+		;;
+	"x86_64")
+		LIBDIR="lib64"
+		;;
+	*)
+		die "Unsupported arch `uname -m`"
+  esac
   ./configure \
         --prefix="${EPREFIX}"/usr \
         --sysconfdir="${EPREFIX}"/etc/${PN}/${PN}.conf \
+		--libdir="${EPREFIX}/usr/${LIBDIR}" \
         || die "configure failed" 
   
 }
