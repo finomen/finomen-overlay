@@ -41,7 +41,8 @@ src_install() {
 }
 
 pkg_postinst() {
-
+  ebegin "Postinst"
+  eend $?
 }
 
 
