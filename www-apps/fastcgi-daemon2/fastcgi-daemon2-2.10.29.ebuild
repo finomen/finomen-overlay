@@ -1,6 +1,6 @@
 EAPI="6"
 
-inherit autotools egit3
+inherit autotools git
 
 EGIT_REPO_URI="https://github.com/finomen/Fastcgi-Daemon.git"
 EGIT_COMMIT="${PV}"
