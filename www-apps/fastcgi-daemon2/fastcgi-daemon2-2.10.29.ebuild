@@ -22,6 +22,7 @@ pkg_setup() {
 
 src_prepare() {
   ebegin "src_prepare"
+  eautoreconf
   eapply_user
   eend $?
 }
