@@ -30,7 +30,7 @@ src_prepare() {
 src_configure() {
   ./configure \
         --prefix="${EPREFIX}"/usr \
-        --conf-path="${EPREFIX}"/etc/${PN}/${PN}.conf \
+        --sysconfdir="${EPREFIX}"/etc/${PN}/${PN}.conf \
         || die "configure failed" 
   
 }
