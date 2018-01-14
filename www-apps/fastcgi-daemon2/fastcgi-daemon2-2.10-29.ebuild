@@ -15,11 +15,13 @@ CDEPEND="
 "
 
 pkg_setup() {
-
+  ebegin "pkg_setup"
+  eend $?
 }
 
 src_prepare() {
-
+  ebegin "src_prepare"
+  eend $?
 }
 
 src_configure() {
