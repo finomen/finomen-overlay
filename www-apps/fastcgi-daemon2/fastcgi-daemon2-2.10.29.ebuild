@@ -1,8 +1,9 @@
 EAPI="6"
 
-inherit autotools
+inherit autotools egit3
 
-SRC_URI="https://github.com/finomen/Fastcgi-Daemon/archive/${P}.zip"
+EGIT_REPO_URI="https://github.com/finomen/Fastcgi-Daemon.git"
+EGIT_COMMIT="${PV}"
 DESCRIPTION="Yandex's opensource framework for highload FastCGI applications on C++ design"
 HOMEPAGE="https://github.com/lmovsesjan/Fastcgi-Daemon"
 LICENSE="GPL-2"
