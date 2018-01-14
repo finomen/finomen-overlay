@@ -12,7 +12,8 @@ SLOT="2"
 
 KEYWORDS="~amd64"
 
-CDEPEND="
+DEPEND="
+  dev-libs/fcgi
 "
 
 pkg_setup() {
