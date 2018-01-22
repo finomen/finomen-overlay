@@ -123,6 +123,7 @@ src_prepare() {
 
 ejam() {
 	local b2_opts=(
+		"--ignore-site-config"
 		"--user-config=${BOOST_ROOT}/user-config.jam"
 		"$@"
 	)
