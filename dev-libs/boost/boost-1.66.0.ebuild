@@ -4,7 +4,7 @@
 EAPI=6
 PYTHON_COMPAT=( python{2_7,3_{4,5,6}} )
 
-inherit eutils flag-o-matic multiprocessing python-r1 toolchain-funcs versionator multilib-minimal
+inherit eutils flag-o-matic multiprocessing python-r1 toolchain-funcs versionator multilib-minimal poly-c_ebuilds
 
 MY_P="${PN}_$(replace_all_version_separators _)"
 MAJOR_V="$(get_version_component_range 1-2)"
@@ -123,7 +123,6 @@ src_prepare() {
 
 ejam() {
 	local b2_opts=(
-		"--ignore-site-config"
 		"--user-config=${BOOST_ROOT}/user-config.jam"
 		"$@"
 	)
